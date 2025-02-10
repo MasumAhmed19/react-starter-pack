@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+@theme {
+    /* custom fonts */
+    --font-fraunces: "Fraunces", serif;
+    --font-inter: "Inter", serif;
+
+    /* custom color */
+    --color-primary: #6b56ff;
+    --color-primary-content: #ffffff;
+    --color-primary-dark: #3e23ff;
+    --color-primary-light: #9889ff;
+    --color-secondary: #bf56ff;
+    --color-secondary-content: #350056;
+    --color-secondary-dark: #ac23ff;
+    --color-secondary-light: #d289ff;
+    --color-background: #f0f0f0;
+    --color-foreground: #fbfbfb;
+    --color-border: #dfdfdf;
+    --color-copy: #262626;
+    --color-copy-light: #666666;
+    --color-copy-lighter: #8c8c8c;
+    --color-success: #56ff56;
+    --color-warning: #ffff56;
+    --color-error: #ff5656;
+    --color-success-content: #005600;
+    --color-warning-content: #565600;
+    --color-error-content: #560000;
+}
+
+
+.grad-text{
+    @apply bg-gradient-to-r from-purple-500 via-secondary-light to-primary-dark inline-block text-transparent bg-clip-text
+}
+
+
+/* gradient */
+.g1 {
+    background: linear-gradient(rgba(196, 203, 245, 0.5), transparent);
+  }
+  
+  .g2 {
+    background: linear-gradient(#3062a3, #19549f);
+  }
+  
+  .g3 {
+    background: linear-gradient(#3c52d9, #0c1838);
+  }
+  
+  .g4 {
+    background: linear-gradient(#253575, #162561);
+  }
+  
+  .g5 {
+    background: linear-gradient(#334679, #162561);
+  }
+  
+  .g6 {
+    background: linear-gradient(#334679, #0c1838);
+  }
+  
+  .g7 {
+    background: linear-gradient(#1b275a, #0e1434);
+  }
+  
+  .g8 {
+    background: linear-gradient(to right, transparent, #cac9ff, transparent);
+  }
+  
+  .g9 {
+    background: linear-gradient(#080d27, transparent);
+  }
+  
+  
+  .g10 {
+    background: linear-gradient(to right, transparent, #ECE5FE, transparent);
+  }
+  
+  .g11 {
+    background: linear-gradient(right, #ECE5FE, transparent, #ECE5FE);
+  }
+  
+  .g12 {
+    background: linear-gradient(#ECE5FE, transparent);
+  }
+  
+  .g13 {
+    background:  radial-gradient(#ECE5FE, transparent)
+  }
+  
+  .g14 {
+    background: linear-gradient(transparent, #ECE5FE);
+  }
+  
+  .g15 {
+    background: linear-gradient(180deg, #ECE5FE, transparent);
+  }
+  
+  
+  .g16{
+    background: linear-gradient(transparent, #2A3542);
+  }
+  
+  .g17 {
+    background: linear-gradient( #2a35425b, transparent);
+    backdrop-filter: blur(10px); /* Blurs background elements behind it */
+    border-radius: 12px;
+  }
+  
