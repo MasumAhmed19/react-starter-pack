@@ -8,12 +8,14 @@ import CrimeDetail from '../pages/CrimeDetail/CrimeDetail';
 import UserProfile from '../pages/Profile/UserProfile';
 import Login from '../pages/Auth/Login';
 import SignUP from '../pages/Auth/SignUP';
+import MyPostedCrime from '../pages/MyPostedCrime/MyPostedCrime';
+import About from '../pages/About/About';
 
 export const router = createBrowserRouter([
     {
         path:'/',
         element:<MainLayouts />,
-        errorElement: <Error />,
+        // errorElement: <Error />,
         children:[
             {
                 path:'/',
@@ -31,13 +33,19 @@ export const router = createBrowserRouter([
                 path: '/user-profile',
                 element: <UserProfile />
             },{
-                path: '/login',
-                element: <Login />
+                path: '/my-posted-crimes',
+                element: <MyPostedCrime />
             },{
-                path: '/signup',
-                element: <SignUP />
+                path: '/about',
+                element: <About />
             }
         ]
-    }
+    },{
+        path: '/login',
+        element: <Login />
+    },{
+        path: '/signup',
+        element: <SignUP />
+    },
 ])
 
